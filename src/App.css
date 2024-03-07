@@ -1,0 +1,545 @@
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TAEBAEKfont';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JalnanGothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+}
+
+.godo * {
+  font-family: 'Godo', sans-serif;
+}
+
+@font-face {
+  font-family: 'HallymGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMDOHYEON';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.origin-nav {
+  position: fixed;
+  width: 100%;
+}
+
+.change-nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 10px 10px -10px black;
+  z-index: 999;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 12vw;
+}
+
+.nav-me {
+  font-family: "TAEBAEKfont";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0.5;
+}
+
+.nav-etc {
+  display: flex;
+}
+
+.nav-etc > p {
+  padding: 0 2rem;
+  font-family: "TAEBAEKfont";
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0.5;
+}
+
+.nav-me:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nav-etc > p:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.change {
+  color: black;
+  opacity: 1;
+}
+
+.change:hover {
+  color: #147bb7;
+}
+
+.change > p {
+  color: black;
+  opacity: 1;
+}
+
+.change > p:hover {
+  color: lightblue;
+}
+
+.portfolio {
+  width: 100%;
+  height: 100vh;
+  background-color: #37383b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  font-family: 'TheJamsil5Bold';
+  font-size: 3vw;
+  white-space: pre;
+  color: white;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 1s step-end infinite ,typing steps(26) 2s ;
+  text-align: center;
+  width: 100%;
+}
+
+.more-button {
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  cursor: pointer;
+  animation: moveUpDown 1s linear infinite;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show {
+  opacity: 0.6;
+}
+
+.more-button:hover {
+  opacity: 1;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+}
+
+.main {
+  height: 550vh;
+}
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  padding-top: 5vh;
+}
+
+.introduce-title {
+  font-family: 'TAEBAEKfont';
+  font-size: 3rem;
+  font-weight: 900;
+  word-spacing: 1rem;
+  border-bottom: 3px solid black;
+  border-image: linear-gradient(to left, white, black) 1;
+}
+
+.introduce-self {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  font-family: "TAEBAEKfont";
+}
+
+.self-1 {
+  display: flex;
+  padding: 2rem;
+}
+
+.self-1 > div {
+  padding: 0 1rem;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5vh;
+  padding-top: 5vh;
+  background-color: #1f4078;
+  padding-bottom: 5vh;
+}
+
+.skills-title {
+  font-family: 'TAEBAEKfont';
+  font-size: 3rem;
+  font-weight: 900;
+  word-spacing: 1rem;
+  border-bottom: 3px solid black;
+  border-image: linear-gradient(to left, white, gold) 1;
+  color: white;
+  margin: 1rem;
+}
+
+.skills-etc {
+  column-count: 3;
+  column-gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills-set {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.skills-set > div {
+  display: inline-block;
+}
+
+.skills-set-title {
+  font-family: 'JalnanGothic';
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.skills-badge {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+}
+
+.skills-badge > img {
+  border-radius: 5px;
+  margin: .7rem;
+  width: 10rem;
+  height: 2.5rem;
+}
+
+.skills-badge > img:hover {
+  scale: 1.1;
+  opacity: 0.7;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c9c4b5;
+  position: relative;
+  padding-top: 5vh;
+}
+
+.projects-title {
+  font-family: 'TAEBAEKfont';
+  font-size: 3rem;
+  font-weight: 900;
+  word-spacing: 1rem;
+  border-bottom: 3px solid black;
+  border-image: linear-gradient(to left, white, #c9c9c9) 1;
+  color: white;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projects-main {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  height: 90vh;
+  box-shadow: 5px 5px 5px gray;
+  margin-bottom: 10vh;
+}
+
+.project-main-title {
+  text-align: center;
+  font-family: "TAEBAEKfont";
+  font-size: 2rem;
+}
+
+.project-main-title > div {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.project-explain {
+  display: flex;
+  margin: 0 2rem;
+}
+
+.img-container {
+  position: relative;
+  width: 50%;
+  height: 50vh;
+  margin-right: 2rem;
+  overflow: hidden;
+}
+
+.img-container > img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.img-container:hover > img {
+  filter: blur(8px);
+}
+
+.project-explain-text {
+  width: 50%;
+  font-size: 1.1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Pretendard-Regular";
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.project-explain-text > div > span {
+  font-family: "Pretendard-Regular";
+  background-color: #bac9ec;
+  font-size: 1.1vw;
+  color: rgb(60, 60, 60);
+  font-weight: 600;
+}
+
+.git-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1f4078;
+  color: white;
+  font-family: 'Godo';
+  font-size: 1.5vw;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #1f4078;
+  color: white;
+  visibility: hidden;
+  text-wrap: nowrap;
+}
+
+.img-container:hover > .git-btn {
+  visibility: visible;
+}
+
+.git-btn:active {
+  border: 1px solid #1f4078;
+  background-color: white;
+  color: #1f4078;
+}
+
+.project-explain-tech {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  row-gap: 1rem;
+  font-family: "BMDOHYEON";
+  line-height: 150%;
+  margin: 0 2rem;
+  align-items: center;
+  border-top:1px solid gray;
+  padding-top: 1rem;
+}
+
+footer {
+  background-color: black;
+  height: 20vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  filter:brightness(0) invert(1);
+  width: 12px;
+  height: 12px;
+}
+
+.footer-imgbox > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 .5rem;
+  cursor: pointer;
+}
+
+.up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border: none;
+  padding: .5rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px gray;
+  cursor: pointer;
+}
+
+.up:active {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+span {
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium';
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .introduce-self {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .skills-etc {
+    column-count: 2;
+  }
+
+  .projects-main {
+    width: 80vw;
+    height: 90vh;
+  }
+
+  .project-explain {
+    flex-direction: column;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 1rem;
+  }
+
+  .project-explain-text {
+    width: 100%;
+    font-size: 1.5vw;
+    margin-bottom: 1rem;
+  }
+
+  .project-explain-text > div > span {
+    font-size: 1.5vw;
+  }
+
+  .project-explain-tech {
+    font-size: 1.3vw;
+  }
+}
