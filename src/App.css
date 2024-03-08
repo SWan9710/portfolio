@@ -246,6 +246,10 @@
   padding: 0 1rem;
 }
 
+.self-1 > div > span {
+  font-family: "Pretendard-Regular";
+}
+
 .skills {
   display: flex;
   align-items: center;
@@ -462,6 +466,10 @@ footer {
   border-radius: 50%;
   margin: 0 .5rem;
   cursor: pointer;
+}
+
+.gmail {
+  background-color: white;
 }
 
 .up {

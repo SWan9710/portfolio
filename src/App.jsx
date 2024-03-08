@@ -14,6 +14,7 @@ import copy from "./image/copyright.png"
 import github from "./image/github.png"
 import notion from "./image/notion.jpg"
 import velog from "./image/velog.jpg"
+import gmail from "./image/gmail.png"
 
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
@@ -215,6 +216,7 @@ function App() {
               <div className="skills-badge">
                 <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visual studio code&logoColor=white" alt="visual studio code" />
                 <img src="https://img.shields.io/badge/androidstudio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" alt="androidstudio" />
+                <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=for-the-badge&logo=Eclipse IDE&logoColor=white" alt="Eclipse IDE" />
               </div>
             </div>
           </div>
@@ -232,47 +234,15 @@ function App() {
 
       <div className="projects" ref={ProjectRef}>
         <div className="projects-title">Projects</div>
-
-        <div className="projects-main">
-
-          <p className="project-main-title">포트폴리오 사이트
-            <div>(2024.02.26 ~ 2024. 03. 07)</div>
-          </p>
-
-          <div className="project-explain">
-            <div className="img-container">
-              <img src={ptf} alt="" />
-              <button className="git-btn" onClick={() => {window.location.href="https://github.com/SWan9710/SSAFY_3_P_ON"}}>Github 확인하기</button>
-            </div>
-
-            <div className="project-explain-text">
-              <div>백엔드와 배포없이 React 와 JavsScript 만을 이용하여 만든 <br /> 포트폴리오 정리용 사이트 입니다.</div><br />
-              <div>초기 화면과, 소개글, 스킬들, 프로젝트 설명, 연락처, footer 등을 작성하였습니다.</div>
-              <br />
-              <div>프로젝트의 이미지를 클릭하면 정리된 Github로 이동이 가능합니다.</div>
-
-              <div>순수 CSS 만을 이용하여 다양한 기능을 구현하였습니다.</div>
-              <div>React 와 바닐라자바스크립트를 활용하여 기능을 구현하였습니다.</div>
-            </div>    
-          </div>
-
-          <div className="project-explain-tech">
-            <div>주요기능</div>
-            <div>인트로, 스크롤 이벤트, 호버 이벤트</div>
-            <div>Frontend</div>
-            <div>React, CSS3, JavaScript</div>
-          </div>
-        </div>
-
         <div className="projects-main">
           <p className="project-main-title">
             약속 및 일정 관리 어플 P:ON
-            <div>(2023.10.10 ~ 2023.11.17)</div>
+            <div>(2023.10.10 ~ 2023.11.17) - 6주</div>
           </p>
           <div className="project-explain">
             <div className="img-container"> 
               <img src={pon} alt="" />
-              <button className="git-btn" onClick={() => {window.location.href="https://github.com/SWan9710/SSAFY_3_P_ON"}}>Github 확인하기</button>
+              <button className="git-btn" onClick={() => {window.open("https://github.com/SWan9710/SSAFY_3_P_ON")}}>Github 확인하기</button>
             </div>
 
             <div className="project-explain-text">
@@ -305,12 +275,12 @@ function App() {
         <div className="projects-main">
           <p className="project-main-title">
             꿈 거래 플랫폼 IN A DREAM
-            <div>(2023.08.21 ~ 2023.10.06)</div>
+            <div>(2023.08.21 ~ 2023.10.06) - 7주</div>
           </p>
           <div className="project-explain">
             <div className="img-container"> 
               <img src={dream} alt="" />
-              <button className="git-btn" onClick={() => {window.location.href="https://github.com/SWan9710/SSAFY9-2InADream"}}>Github 확인하기</button>
+              <button className="git-btn" onClick={() => {window.open("https://github.com/SWan9710/SSAFY9-2InADream")}}>Github 확인하기</button>
             </div>
 
             <div className="project-explain-text">
@@ -343,12 +313,12 @@ function App() {
         <div className="projects-main">
           <p className="project-main-title">
             퍼스널컬러 진단 및 화장품 추천 플랫폼 Mon, Palette
-            <div>(2023.07.10 ~ 2023.08.18)</div>          
+            <div>(2023.07.10 ~ 2023.08.18) - 6주</div>          
           </p>
           <div className="project-explain">
             <div className="img-container"> 
               <img src={mon} alt="" />
-              <button className="git-btn" onClick={() => {window.location.href="https://github.com/SWan9710/SSAFY-9-2-Mon-Palette"}}>Github 확인하기</button>
+              <button className="git-btn" onClick={() => {window.open("https://github.com/SWan9710/SSAFY-9-2-Mon-Palette")}}>Github 확인하기</button>
             </div>
 
             <div className="project-explain-text">
@@ -373,13 +343,52 @@ function App() {
             <div>Amazon EC2, Docker</div>
           </div>
         </div>
+
+        <div className="projects-main">
+
+          <p className="project-main-title">포트폴리오 사이트
+            <div>(2024.02.26 ~ 2024. 03. 07) - 2주</div>
+          </p>
+
+          <div className="project-explain">
+            <div className="img-container">
+              <img src={ptf} alt="" />
+              <button className="git-btn" onClick={() => {window.open("https://github.com/SWan9710/protfolio")}}>Github 확인하기</button>
+            </div>
+
+            <div className="project-explain-text">
+              <div>백엔드없이 React 와 JavsScript 만을 이용하여 만든 <br /> 포트폴리오 정리용 사이트 입니다.</div><br />
+              <div>초기 화면과, 소개글, 스킬들, 프로젝트 설명, footer 등을 작성하였습니다.</div>
+              <br />
+              <div>프로젝트의 이미지를 클릭하면 정리된 Github로 이동이 가능합니다.</div>
+
+              <div>순수 CSS 만을 이용하여 다양한 기능을 구현하였습니다.</div>
+              <div>React 와 바닐라자바스크립트를 활용하여 기능을 구현하였습니다.</div>
+            </div>    
+          </div>
+
+          <div className="project-explain-tech">
+            <div>주요기능</div>
+            <div>인트로, 스크롤 이벤트, 호버 이벤트</div>
+            <div>Frontend</div>
+            <div>React, CSS3, JavaScript</div>
+            <div>deployment</div>
+            <div>Vercel</div>
+          </div>
+        </div>
+
+
       </div>
+
+
 
       <footer>
         <div className="footer-imgbox">
-          <img className="copyright" src={github} alt="Github" onClick={() => {window.location.href="https://github.com/SWan9710"}} />
-          <img src={notion} alt="Velog" onClick={() => {window.location.href="https://wholesale-spoonbill-d91.notion.site/1ae4d7f6e5bd4dc1945df8f44d134681"}} />
-          <img src={velog} alt="Notion" onClick={() => {window.location.href="https://velog.io/@swan/posts"}} />
+          <img className="copyright" src={github} alt="Github" onClick={() => {window.open("https://github.com/SWan9710")}} />
+          <img src={notion} alt="Velog" onClick={() => {window.open("https://wholesale-spoonbill-d91.notion.site/1ae4d7f6e5bd4dc1945df8f44d134681")}} />
+          <img src={velog} alt="Notion" onClick={() => {window.open("https://velog.io/@swan/posts")}} />
+          <img className="gmail" src={gmail} alt="" onClick={() => {window.open("mailto:wjdtndhks1212@gmail.com")}} />
+
         </div>
         <br />
         <div>Copyright <span><img className="copyright" src={copy} alt="copyright" /> Jeong Soo Wan</span></div>
