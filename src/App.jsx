@@ -323,7 +323,10 @@ function App() {
 
         <div className="projects-main">
 
-          <p className="project-main-title">꿈 거래 플랫폼 IN A DREAM</p>
+          <p className="project-main-title">
+            꿈 거래 플랫폼 IN A DREAM
+            <div>🏆프로젝트 우수상 수상🏆</div>
+          </p>
 
           <div className="project-explain">
             <div className="img-container"> 

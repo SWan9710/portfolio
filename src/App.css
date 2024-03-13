@@ -416,6 +416,10 @@
   font-size: 2rem;
 }
 
+.project-main-title > div {
+  font-size: 1.2rem;
+}
+
 .project-explain {
   display: flex;
   margin: 0 2rem;
