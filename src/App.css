@@ -229,12 +229,24 @@
   border-image: linear-gradient(to left, white, black) 1;
 }
 
+.introduce-myself {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "TheJamsil5Bold"
+}
+
 .introduce-self {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
   font-size: 1.5rem;
   font-family: "TAEBAEKfont";
+  display: flex;
+  margin-top: 1rem;
+}
+
+.introduce-self > img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  padding: 0 1rem;
 }
 
 .self-1 {
@@ -250,12 +262,60 @@
   font-family: "Pretendard-Regular";
 }
 
-.skills {
+.Education {
+  background-color: #FFE05C;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.education-title {
+  font-family: 'TAEBAEKfont';
+  font-size: 3rem;
+  font-weight: 900;
+  word-spacing: 1rem;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to left, white, #0066CC) 1;
+  color: white;
+  margin: 1rem;
+}
+
+.education-container {
+  width: 40rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+  margin-bottom: 5vh;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.container-1 {
+  font-family: 'JalnanGothic';
+  font-size: 1.2rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.container-2 > div {
+  font-family: 'JalnanGothic';
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding-top: 5vh;
   background-color: #1f4078;
   padding-bottom: 5vh;
@@ -272,31 +332,32 @@
   margin: 1rem;
 }
 
-.skills-etc {
-  column-count: 3;
-  column-gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.skills-set {
-  background-color: white;
-  color: black;
-  padding: 2rem;
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  padding: 1rem;
   border-radius: 10px;
-  margin: 1rem;
-  text-align: center;
+  box-shadow: 5px 5px 5px black;
+  margin-bottom: 5vh;
+  width: 40rem;
 }
 
-.skills-set > div {
-  display: inline-block;
+.level-explain {
+  font-family: "Pretendard-Regular";
+  font-size: 1rem;
+  color: #0066CC;
+  font-weight: bold;
 }
 
-.skills-set-title {
-  font-family: 'JalnanGothic';
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 3px;
+.filled-star {
+  color: rgb(243, 198, 072);
+}
+
+.outline-star {
+  color: rgb(221, 221, 221);
 }
 
 .skills-badge {
@@ -309,8 +370,8 @@
 .skills-badge > img {
   border-radius: 5px;
   margin: .7rem;
-  width: 10rem;
-  height: 2.5rem;
+  width: 15rem;
+  height: 3rem;
 }
 
 .skills-badge > img:hover {
@@ -345,7 +406,6 @@
   flex-direction: column;
   background-color: white;
   border-radius: 10px;
-  height: 90vh;
   box-shadow: 5px 5px 5px gray;
   margin-bottom: 10vh;
 }
@@ -356,59 +416,29 @@
   font-size: 2rem;
 }
 
-.project-main-title > div {
-  font-size: 1rem;
-  margin-top: 0.2rem;
-}
-
 .project-explain {
   display: flex;
   margin: 0 2rem;
+  height: 100%;
 }
 
 .img-container {
-  position: relative;
   width: 50%;
   height: 50vh;
   margin-right: 2rem;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .img-container > img {
   object-fit: contain;
   width: 100%;
   height: 100%;
-  transition: 0.5s ease;
-}
-
-.img-container:hover > img {
-  filter: blur(8px);
-}
-
-.project-explain-text {
-  width: 50%;
-  font-size: 1.1vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Pretendard-Regular";
-  font-weight: 600;
-  line-height: 130%;
-}
-
-.project-explain-text > div > span {
-  font-family: "Pretendard-Regular";
-  background-color: #bac9ec;
-  font-size: 1.1vw;
-  color: rgb(60, 60, 60);
-  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .git-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #1f4078;
   color: white;
   font-family: 'Godo';
@@ -418,12 +448,8 @@
   cursor: pointer;
   border: 1px solid #1f4078;
   color: white;
-  visibility: hidden;
   text-wrap: nowrap;
-}
-
-.img-container:hover > .git-btn {
-  visibility: visible;
+  margin: 0 3rem;
 }
 
 .git-btn:active {
@@ -432,16 +458,41 @@
   color: #1f4078;
 }
 
-.project-explain-tech {
+.project-main-text {
+  width: 50%;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  row-gap: 1rem;
-  font-family: "BMDOHYEON";
+  grid-template-columns: 1fr 3fr;
+  font-family: "Pretendard-Regular";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.project-main-text > p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.project-main-text > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   line-height: 150%;
-  margin: 0 2rem;
-  align-items: center;
-  border-top:1px solid gray;
-  padding-top: 1rem;
+}
+
+.project-learned {
+  margin: 1rem 2rem;
+}
+
+.project-learned > p {
+  font-family: "BMDOHYEON";
+}
+
+.project-learned > ol {
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 150%;
 }
 
 footer {
@@ -487,67 +538,8 @@ footer {
   opacity: 0.5;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 span {
   font-size: 1rem;
   font-family: 'Franklin Gothic Medium';
   font-weight: bold;
-}
-
-@media (max-width: 1024px) {
-  .introduce-self {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  .skills-etc {
-    column-count: 2;
-  }
-
-  .projects-main {
-    width: 80vw;
-    height: 90vh;
-  }
-
-  .project-explain {
-    flex-direction: column;
-  }
-
-  .img-container {
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 1rem;
-  }
-
-  .project-explain-text {
-    width: 100%;
-    font-size: 1.5vw;
-    margin-bottom: 1rem;
-  }
-
-  .project-explain-text > div > span {
-    font-size: 1.5vw;
-  }
-
-  .project-explain-tech {
-    font-size: 1.3vw;
-  }
 }
