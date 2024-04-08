@@ -270,7 +270,7 @@ function App() {
         <div className="projects-title">Projects</div>
         <div className="projects-main">
 
-          <p className="project-main-title">약속 및 일정 관리 어플 </p>
+          <p onClick={() => {window.open("https://github.com/SWan9710/SSAFY_3_P_ON")}} className="project-main-title">약속 및 일정 관리 어플 P:ON </p>
 
           <div className="project-explain">
             <div className="img-container"> 
@@ -279,51 +279,58 @@ function App() {
             </div>
             
             <div className="project-main-text">
-              <p>프로젝트 기간</p>
-              <div>2023.10.10 ~ 2023.11.17 - 6주</div>
+              <p>📆 프로젝트 기간</p>
+              <div className="project-period">2023.10.10 ~ 2023.11.17 - 6주</div>
 
-              <p>주요기능</p>
-              <ul>
-                <li>약속생성</li>
-                <li>투표생성</li>
-                <li>일정생성</li>
-                <li>챗봇</li>
-                <li>채팅</li>
-                <li>추억</li>
-              </ul>
+              <p>🔥 주요기능</p>
+              <div className="project-main-function">
+                <div className="function">약속생성</div>
+                <div className="function">투표생성</div>
+                <div className="function">일정생성</div>
+                <div className="function">챗봇</div>
+                <div className="function">채팅</div>
+                <div className="function">추억</div>
+              </div>
+              
 
-              <p>사용기술</p>
-              <div>Flutter, Dart, NextJS, React</div>
+              <p>🛠️ 사용기술</p>
+              <div className="project-main-skill">
+                <div className="skill">Flutter</div>
+                <div className="skill">Dart</div>
+                <div className="skill">NextJS</div>
+                <div className="skill">React</div>
+              </div>
 
-              <p>맡은부분</p>
-              <ul>
-                <li>피그마 작성 및 와이어 프레임 구상</li>
-                <li>약속방 생성화면 구현</li>
-                <li>약속방 생성화면 구현</li>
-                <li>네이버 지도 구현</li>
-                <li>투표기능 구현</li>
-                <li>채팅방 구현</li>
-                <li>홈화면 구현</li>
-                <li>챗봇 화면 구현</li>
-                <li>챗봇 도움말 기능 구현</li>
-              </ul>
+              <p>✅ 맡은부분</p>
+              <div className="project-main-function">
+                <span className="function">피그마 작성 및 와이어 프레임 구상</span>
+                <span className="function">약속방 생성화면 구현</span>
+                <span className="function">약속방 생성화면 구현</span>
+                <span className="function">네이버 지도 구현</span>
+                <span className="function">투표기능 구현</span>
+                <span className="function">채팅방 구현</span>
+                <span className="function">홈화면 구현</span>
+                <span className="function">챗봇 화면 구현</span>
+                <span className="function">챗봇 도움말 기능 구현</span>
+              </div>
+
             </div>
           </div>
 
           <div className="project-learned">
-            <p>이번 프로젝트를 통해 알게된 점</p>
+            <p>💡 이번 프로젝트를 통해 알게된 점</p>
             <ol>
-              <li>Flutter 와 Dart를 활용하여 모바일 화면을 구현하는 방법을 배울 수 있었습니다.</li>
+              <li><span>Flutter & Dart</span> 를 이용한 <span>크로스플랫폼 코드 작성법</span>을 배울 수 있었습니다.</li>
               <li>Flutter 코드의 모바일 작업 효율성에 대해 알게되엇습니다.</li>
-              <li>플러터 프로젝트를 진행하며 재사용성이 높은 코드 작성법을 배울 수 있었습니다.</li>
-              <li>플러터의 다양한 라이브러리와 패키지들의 사용법을 알 수 있었습니다.</li>
+              <li>플러터 프로젝트를 진행하며 재사용성이 높은 코드를 작성하기 위해 <span>컴포넌트 구조</span> 로 분할하여 코드를 작성하였습니다.</li>
+              <li>플러터의 다양한 라이브러리의 사용법을 알 수 있었습니다.</li>
             </ol>
           </div>
         </div>
 
         <div className="projects-main">
 
-          <p className="project-main-title">
+          <p onClick={() => {window.open("https://github.com/SWan9710/SSAFY9-2InADream")}} className="project-main-title">
             꿈 거래 플랫폼 IN A DREAM
             <div>🏆프로젝트 우수상 수상🏆</div>
           </p>
@@ -335,50 +342,56 @@ function App() {
             </div>
             
             <div className="project-main-text">
-              <p>프로젝트 기간</p>
-              <div>2023.08.21 ~ 2023.10.06 - 7주</div>
+              <p>📆 프로젝트 기간</p>
+              <div className="project-period">2023.08.21 ~ 2023.10.06 - 7주</div>
 
-              <p>주요기능</p>
-              <ul>
-                <li>꿈일기 작성</li>
-                <li>꿈일기 거래</li>
-                <li>꿈일기 통계</li>
-                <li>꿈일기 추천</li>
-                <li>검색</li>
-              </ul>
+              <p>🔥 주요기능</p>
+              <div className="project-main-function">
+                <div className="function">꿈일기 작성</div>
+                <div className="function">꿈일기 거래</div>
+                <div className="function">꿈일기 통계</div>
+                <div className="function">꿈일기 추천</div>
+                <div className="function">검색</div>
+              </div>
 
-              <p>사용기술</p>
-              <div>TypeScript, ThreeJS, <br /> React, ReactQuery, Redux</div>
+              <p>🛠️ 사용기술</p>
+              <div className="project-main-skill">
+                <div className="skill">TypeScript</div>
+                <div className="skill">ThreeJS</div>
+                <div className="skill">React</div>
+                <div className="skill">ReactQuery</div>
+                <div className="skill">Redux</div>
+              </div>
 
-              <p>맡은부분</p>
-              <ul>
-                <li>피그마 작성 및 와이어 프레임 구상</li>
-                <li>페이지 라우팅 기능</li>
-                <li>일기관련 CR 기능 구현</li>
-                <li>로그인 페이지 구현</li>
-                <li>회원가입 페이지 구현</li>
-                <li>통꼐 페이지 구현</li>
-                <li>반응형 웹페이지 구현</li>
-                <li>이외 전반적인 페이지 개발</li>
-              </ul>
+              <p>✅ 맡은부분</p>
+              <div className="project-main-function">
+                <div className="function">피그마 작성 및 와이어 프레임 구상</div>
+                <div className="function">페이지 라우팅 기능</div>
+                <div className="function">일기관련 CR 기능 구현</div>
+                <div className="function">로그인 페이지 구현</div>
+                <div className="function">회원가입 페이지 구현</div>
+                <div className="function">통꼐 페이지 구현</div>
+                <div className="function">반응형 웹페이지 구현</div>
+                <div className="function">이외 전반적인 페이지 개발</div>
+              </div>
             </div>
           </div>
 
           <div className="project-learned">
             <p>이번 프로젝트를 통해 알게된 점</p>
             <ol>
-              <li>반응형 웹페이지를 구현하며 CSS의 동적기능들을 활용할 수 있었습니다.</li>
-              <li>객체지향적 프로그래밍을 통해 반복가능하고 재사용성이 높은 코드를 컴포넌트로 분할하여 <br />짧은 시간에 여러 페이지를 만들 수 있었습니다.</li>
-              <li>사용자 피드백 이벤트를 다양하게 활용하여 UX 적 만족도가 높은 페이지를 제작할 수 있었습니다.</li>
+              <li><span>반응형 웹페이지</span>를 구현하며 CSS의 동적기능들을 활용할 수 있었습니다.</li>
+              <li><span>객체지향적 프로그래밍</span>을 통해 반복가능하고 재사용성이 높은 코드를 컴포넌트로 분할하여 <br />짧은 시간에 여러 페이지를 만들 수 있었습니다.</li>
+              <li><span>사용자 피드백 이벤트</span>를 다양하게 활용하여 UX 적 만족도가 높은 페이지를 제작할 수 있었습니다.</li>
               <li>협업을 통해 각자의 진행상황을 공유하며 개발을 진행할 수 있었습니다.</li>
-              <li>자세한 코드 컨벤션을 통해 통일성 있는 코드 작성을 할 수 있었습니다.</li>
+              <li>자세한 <span>코드 컨벤션</span>을 통해 통일성 있는 코드 작성을 할 수 있었습니다.</li>
             </ol>
           </div>
         </div>
 
         <div className="projects-main">
 
-          <p className="project-main-title">퍼스널컬러 진단 및 화장품 추천 플랫폼 Mon, Palette</p>
+          <p onClick={() => {window.open("https://github.com/SWan9710/SSAFY-9-2-Mon-Palette")}} className="project-main-title">퍼스널컬러 진단 및 화장품 추천 플랫폼 Mon, Palette</p>
 
           <div className="project-explain">
             <div className="img-container"> 
@@ -387,34 +400,40 @@ function App() {
             </div>
             
             <div className="project-main-text">
-              <p>프로젝트 기간</p>
-              <div>2023.07.10 ~ 2023.08.18 - 6주</div>
+            <p>📆 프로젝트 기간</p>
+              <div className="project-period">2023.07.10 ~ 2023.08.18 - 6주</div>
 
-              <p>주요기능</p>
-              <ul>
-                <li>퍼스널 컬러 진단</li>
-                <li>미디어 작성, 수정, 삭제, 조회</li>
-                <li>화장품 거래</li>
-                <li>검색</li>
-                <li>마이페이지</li>
-                <li>팔로잉, 팔로우</li>
-              </ul>
+              <p>🔥 주요기능</p>
+              <div className="project-main-function">
+                <div className="function">퍼스널 컬러 진단</div>
+                <div className="function">미디어 작성, 수정, 삭제, 조회</div>
+                <div className="function">화장품 거래</div>
+                <div className="function">검색</div>
+                <div className="function">마이페이지</div>
+                <div className="function">팔로잉, 팔로우</div>
+              </div>
 
-              <p>사용기술</p>
-              <div>JavaScript, Html/Css, React, Recoil</div>
+              <p>🛠️ 사용기술</p>
+              <div className="project-main-skill">
+                <div className="skill">React</div>
+                <div className="skill">JavaScript</div>
+                <div className="skill">Recoil</div>
+                <div className="skill">AWS S3</div>
+                <div className="skill">Flutter</div>
+              </div>
 
-              <p>맡은부분</p>
-              <ul>
-                <li>피그마 작성 및 와이어 프레임 구상</li>
-                <li>페이지 라우팅 기능 및 라우터 보안 구현</li>
-                <li>피드와 챌린지 부분의 CRUD 구현</li>
-                <li>쇼핑몰 카테고리 기능 구현</li>
-                <li>쇼핑몰 메인페이지 제작</li>
-                <li>해시태그 기능 구현</li>
-                <li>장바구니 페이지 제작</li>
-                <li>AWS S3를 활용한 파일 업로드 및 불러오기 기능 구현</li>
-                <li>Flutter를 활용한 모바일 APK 파일 빌드</li>
-              </ul>
+              <p>✅ 맡은부분</p>
+              <div className="project-main-function">
+                <div className="function">피그마 작성 및 와이어 프레임 구상</div>
+                <div className="function">페이지 라우팅 기능 및 라우터 보안 구현</div>
+                <div className="function">피드와 챌린지 부분의 CRUD 구현</div>
+                <div className="function">쇼핑몰 카테고리 기능 구현</div>
+                <div className="function">쇼핑몰 메인페이지 제작</div>
+                <div className="function">해시태그 기능 구현</div>
+                <div className="function">장바구니 페이지 제작</div>
+                <div className="function">AWS S3를 활용한 파일 업로드 및 불러오기 기능 구현</div>
+                <div className="function">Flutter를 활용한 모바일 APK 파일 빌드</div>
+              </div>
             </div>
           </div>
 
@@ -422,17 +441,16 @@ function App() {
             <p>이번 프로젝트를 통해 알게된 점</p>
             <ol>
               <li>React로 처음 개발을 진행하며 다양한 기능들을 사용하고 함수형 컴포넌트를 만들 수 있었습니다.</li>
-              <li>협업을 통해 각자의 분량을 조율하고 팀원들을 도와 프로젝트를 진행할 수 있었습니다.</li>
-              <li>Git과 Jira 협업툴을 사용하여 각자의 진행상황을 공유하는 협업의 방법을 배울 수 있었습니다.</li>
-              <li>AWS S3를 이용하여 프론트에서 외부 api의 연동 과 파일 업로드 및 다운로드 방법을 배울 수 있었습니다.</li>
-              <li>플러터를 이용하여 모바일 Apk 파일 빌드 방법을 배울 수 있었습니다.</li>
+              <li><span>Git과 Jira</span> 협업툴을 사용하여 각자의 진행상황을 공유하는 협업의 방법을 배울 수 있었습니다.</li>
+              <li><span>AWS S3</span>를 이용하여 프론트에서 외부 api의 연동 과 파일 업로드 및 다운로드 방법을 배울 수 있었습니다.</li>
+              <li>플러터를 이용하여 <span>모바일 Apk 파일 빌드</span> 방법을 배울 수 있었습니다.</li>
             </ol>
           </div>
         </div>
 
         <div className="projects-main">
 
-          <p className="project-main-title">포트폴리오 사이트</p>
+          <p onClick={() => {window.open("https://github.com/SWan9710/protfolio")}} className="project-main-title">포트폴리오 사이트</p>
 
           <div className="project-explain">
             <div className="img-container"> 
@@ -441,21 +459,26 @@ function App() {
             </div>
             
             <div className="project-main-text">
-              <p>프로젝트 기간</p>
-              <div>2024.02.26 ~ 2024. 03. 07 - 2주</div>
+            <p>📆 프로젝트 기간</p>
+              <div className="project-period">2024.02.26 ~ 2024. 03. 07 - 2주</div>
 
-              <p>주요기능</p>
-              <ul>
-                <li>포트폴리오 설명</li>
-              </ul>
+              <p>🔥 주요기능</p>
+              <div className="project-main-function">
+                <div className="function">포트폴리오 설명</div>
+              </div>
 
-              <p>사용기술</p>
-              <div>JavaScript, Html/Css, React, Vercel</div>
+              <p>🛠️ 사용기술</p>
+              <div className="project-main-skill">
+                <div className="skill">React</div>
+                <div className="skill">JavaScript</div>
+                <div className="skill">HTML/CSS</div>
+                <div className="skill">Vercel</div>
+              </div>
 
-              <p>맡은부분</p>
-              <ul>
-                <li>전체 페이지 제작 </li>
-              </ul>
+              <p>✅ 맡은부분</p>
+              <div className="project-main-function">
+              <div className="function">전체 페이지 제작</div>
+              </div>
             </div>
           </div>
 
